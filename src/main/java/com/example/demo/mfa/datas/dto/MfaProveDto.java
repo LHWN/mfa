@@ -12,8 +12,8 @@ import java.io.Serializable;
 @ToString
 @EqualsAndHashCode(callSuper = false)
 public class MfaProveDto implements Serializable {
-    private String secretKey;
-    private String type;
+    private final String secretKey;
+    private final String type;
 
     public MfaProveDto(MfaEntity mfaEntity) {
         this.secretKey = mfaEntity.getSecretKey();

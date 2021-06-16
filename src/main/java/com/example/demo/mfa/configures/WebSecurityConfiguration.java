@@ -30,7 +30,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .mvcMatchers("images/**");
     }
 
-    private String permitallUrl = "/login,/,/prelogin,/mfactor,/purelogin";
+    private final String permitallUrl = "/login,/,/prelogin,/mfactor,/purelogin";
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

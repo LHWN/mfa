@@ -19,16 +19,16 @@ import java.io.Serializable;
 public class UserEntity implements Serializable {
     @Id
     @Column(nullable = false)
-    private long id;
+    private final long id;
 
     @Column(length = 50)
-    private String username;
+    private final String username;
 
     @Column(length = 512)
-    private String password;
+    private final String password;
 
     @Column(length = 1000)
-    private String roles;
+    private final String roles;
 
     @Builder
     public UserEntity(long id, String username, String password, String roles) {

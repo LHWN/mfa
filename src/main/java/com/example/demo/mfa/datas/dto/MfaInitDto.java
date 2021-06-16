@@ -9,9 +9,9 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode(callSuper = false)
 public class MfaInitDto {
-    private String username;
-    private String secretKey;
-    private String type;
+    private final String username;
+    private final String secretKey;
+    private final String type;
 
     @Builder
     public MfaInitDto(String username, String secretKey, String type) {
